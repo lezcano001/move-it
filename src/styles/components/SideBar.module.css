@@ -1,0 +1,92 @@
+.sideBarContainer {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    width: 7rem;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--white) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+}
+
+.sideBarContainer > img {
+    margin-top: 2rem;
+    justify-self: center;
+    align-self: start;
+}
+
+.sideBarContainer > div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarContainer > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 3.5rem;
+    /* padding: 1rem 0 1rem 0; */
+    position: relative;
+}
+
+.sideBarContainer > div > a > svg{
+    height: 2rem;
+}
+
+.buttonActive:after{
+    /* border-left: blueviolet 4px solid; */
+    content:"";
+    width: 0.25rem;
+    height: 3.5rem;
+    background-color: var(--blue);
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    left: 0;
+}
+
+.buttonActive svg g {
+    opacity: 1;
+}
+
+.buttonActive svg path{
+    /* filter: invert(37%) sepia(56%) saturate(1775%) hue-rotate(217deg) brightness(91%) contrast(92%); */
+    /* filter: invert(35%) sepia(89%) saturate(1769%) hue-rotate(221deg) brightness(92%) contrast(91%); */
+    stroke: var(--blue);
+}
+
+/* .buttonActive img {
+    transform: translateX(-2px);
+} */
+
+.sideBarContainer > div > a:first-child {
+    margin-bottom: 1rem;
+}
+
+.sideBarContainer button{
+    /* padding: 2rem 0 2rem 0; */
+    padding: 0;
+    /* height: 3.5rem; */
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.sideBarContainer button img{
+    height: 2rem;
+    transition: filter 0.1s;
+}
+
+.sideBarContainer button img:hover{
+    filter: invert(64%) sepia(64%) saturate(7497%) hue-rotate(221deg) brightness(92%) contrast(89%);
+}

@@ -1,0 +1,172 @@
+.usersRanking {
+    height: calc(100% - 5rem);
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.usersRanking ul{
+    list-style-type: none;
+}
+
+.usersRanking header {
+    margin-bottom: 1.5rem;
+}
+
+.usersRanking header ul{
+    display: flex;
+    align-items: center;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+
+    color: var(--text);
+    opacity: 0.5;
+}
+
+.usersRanking header ul li:nth-child(1) {
+    width: 4.75rem;
+}
+
+.usersRanking header ul li:nth-child(2) {
+    width: 34.75rem;
+    padding-left: 1.5rem;
+}
+
+.usersRanking header ul li:nth-child(3) {
+    width: 11.875rem;
+}
+
+.usersRanking header ul li:nth-child(4) {
+    width: 8.625rem;
+}
+
+.usersRanking > div {
+    height: calc(100% - 3rem);
+    overflow-y: auto;
+}
+
+/* ====== width of the entire scrollbar ====== */
+.usersRanking > div::-webkit-scrollbar {
+    width: 0;
+}
+  
+/* ====== color of the tracking area ======*/
+/* .usersRanking > div::-webkit-scrollbar-track {
+    background: orange;        
+} */
+  
+
+/* ====== color of the scroll thumb ====== */
+/* ====== roundness of the scroll thumb ====== */
+/* ====== creates padding around scroll thumb ====== */
+/* .usersRanking > div::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;      
+    border: 3px solid orange;  
+} */
+
+
+.usersRanking article{
+    margin-bottom: 0.5rem;
+}
+
+/* ====== Es una buena idea activar esta estilizacion si necesito ====== */
+.usersRanking article:last-child{
+    margin-bottom: 0;
+}
+
+.usersRanking article ul{
+    display: flex;
+    height: 6rem;
+}
+
+.usersRanking article ul li{
+    background: var(--white);
+
+    font-size: 1rem;
+    line-height: 1.21rem;
+}
+
+.usersRanking article ul li span{
+    color: var(--blue);
+}
+
+.usersRanking article ul li:nth-child(1) {
+    width: 4.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px 0px 0px 5px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1,8125rem;
+
+    color: var(--text);
+}
+
+.usersRanking article ul li:nth-child(2) {
+    width: 34.75rem;
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+}
+
+.usersRanking article ul li:nth-child(3) {
+    width: 11.875rem;
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+}
+
+.usersRanking article ul li:nth-child(4) {
+    width: 8.625rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+
+    font-weight: 500;
+}
+
+.usersRanking article ul li > img{
+    width: 4rem;
+    border-radius: 50%;
+
+    margin-left: 1.5rem;
+}
+
+.usersRanking article ul li:first-child{
+    margin-right: 0.25rem;
+}
+
+.usersRanking article ul li > div{
+    margin-left: 1rem;
+}
+
+.usersRanking article ul li > div strong{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    
+    color: var(--title);
+}
+
+.usersRanking article ul li > div p {
+    margin-top: 0.4375rem;
+}
+
+.usersRanking article ul li > div p img{
+    margin-right: 0.5625rem;
+}

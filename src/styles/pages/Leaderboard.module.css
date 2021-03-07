@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+}
+
+.containerContent{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContent h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+
+    color: var(--title);
+
+    margin-bottom: 2.5rem;
+}
